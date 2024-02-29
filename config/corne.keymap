@@ -13,7 +13,7 @@
 		sepa: separator {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			bindings = <&macro-tap &kp COMMA &kp SPACE>;
+			bindings = <&macro_tap &kp COMMA &kp SPACE>;
 		};
 	};
 	behaviors {
