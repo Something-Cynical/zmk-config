@@ -107,9 +107,9 @@
 
 		raise_layer {
 			bindings = <
-		&kp ESC		&trans		&trans		&trans		&trans		&trans				&td09			&KP_N7		&KP_8		&KP_9		&none		&trans
-		&trans		&trans		&kp LEFT	&kp UP		&kp DOWN	&kp RIGHT			&td10			&KP_N4		&KP_5		&KP_6		&none		&trans
-		&trans		&trans		&trans		&trans		&trans		&trans				&KP_N0			&KP_N1		&KP_2		&KP_3		&none		&trans
+		&kp ESC		&trans		&trans		&trans		&trans		&trans				&td09			&KP_N7		&KP_N8		&KP_N9		&none		&trans
+		&trans		&trans		&kp LEFT	&kp UP		&kp DOWN	&kp RIGHT			&td10			&KP_N4		&KP_N5		&KP_N6		&none		&trans
+		&trans		&trans		&trans		&trans		&trans		&trans				&KP_N0			&KP_N1		&KP_N2		&KP_N3		&none		&trans
 											&kp LGUI	&trans		&mt LSHFT SPACE		&mt RSHFT RET	&trans		&trans
 			>;
 		};
