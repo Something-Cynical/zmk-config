@@ -35,12 +35,6 @@
 			tapping-term-ms = <200>;
 			bindings = <&kp FSLH>, <&kp BSLH>;
 		};
-		td03: tap_dance_03 {
-			compatible = "zmk,behavior-tap-dance";
-			#binding-cells = <0>;
-			tapping-term-ms = <200>;
-			bindings = <&kp BSPC>, <&kp DEL>;
-		};
 		td04: tap_dance_04 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
@@ -89,28 +83,28 @@
 		compatible = "zmk,keymap";
 		default_layer {
 			bindings = <
-		&kp TAB			&kp Q		&kp W		&kp E		&kp R		&kp T				&kp Y			&kp U		&kp I		&kp O		&kp P		&td03
+		&kp TAB			&kp Q		&kp W		&kp E		&kp R		&kp T				&kp Y			&kp U		&kp I		&kp O		&kp P		&kp BSPC
 		&kp LCTRL		&kp A		&kp S		&kp D		&mt LCTL F	&mt LALT G			&mt RALT H		&mt RCTL J	&kp K		&kp L		&kp SEMI	&lt 1 SQT
 		&kp LSHFT		&kp Z		&kp X		&kp C		&kp V		&kp B				&kp N			&kp M		&kp COMMA	&kp DOT		&td02		&kp ESC
-												&kp LGUI	&mo 1		&mt LSHFT RET		&mt RSHFT SPACE	&mo 2		&kp RALT
+												&kp LGUI	&mo 1		&mt LSHFT RET		&mt RSHFT SPACE	&mo 2	&kp RALT
 			>;
 		};
 
 		lower_layer {
 			bindings = <
-		&kp GRAVE	&kp HASH		&td05		&td07		&td08	&sepa			&kp N1		&kp N2		&kp N3		&kp N4		&kp N5		&trans
-		&trans		&kp AT			&td00		&td04		&td01	&kp EXCL		&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT	&trans		&trans
-		&mo 2		&kp EQUAL		&kp PLUS	&kp MINUS	&td06	&kp FSLH		&trans		&trans		&trans		&trans		&trans		&trans
-												&kp LGUI	&trans	&trans			&trans		&trans		&trans
+		&kp GRAVE	&kp HASH		&td05		&td07		&td08	&sepa			&td09			&kp KP_N7	&kp KP_N8		&kp KP_N9		&none		&trans
+		&trans		&kp AT			&td00		&td04		&td01	&kp EXCL		&td10			&kp KP_N4	&kp KP_N5		&kp KP_N6		&none		&trans
+		&mo 2		&kp EQUAL		&kp PLUS	&kp MINUS	&td06	&kp FSLH		&kp KP_N0		&kp KP_N1	&kp KP_N2		&kp KP_N3		&none		&trans
+												&kp LGUI	&trans	&trans			&mt RSHFT RET	&trans		&trans
 			>;
 		};
 
 		raise_layer {
 			bindings = <
-		&kp ESC		&trans		&trans		&trans		&trans		&trans				&td09			&kp KP_N7	&kp KP_N8		&kp KP_N9		&none		&trans
-		&trans		&trans		&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT			&td10			&kp KP_N4	&kp KP_N5		&kp KP_N6		&none		&trans
-		&trans		&trans		&trans		&trans		&trans		&trans				&kp KP_N0		&kp KP_N1	&kp KP_N2		&kp KP_N3		&none		&trans
-											&kp LGUI	&trans		&mt LSHFT SPACE		&mt RSHFT RET	&trans		&trans
+		&kp ESC		&trans		&trans		&trans		&trans		&trans				&kp N1		&kp N2		&kp N3		&kp N4		&kp N5		&kp DEL
+		&trans		&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT	&trans				&trans		&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT	&trans
+		&trans		&trans		&trans		&trans		&trans		&trans				&trans		&trans		&trans		&trans		&trans		&trans
+											&kp LGUI	&trans		&mt LSHFT SPACE		&trans		&trans		&trans
 			>;
 		};
 	};
