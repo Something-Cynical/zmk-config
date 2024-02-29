@@ -9,81 +9,81 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-		macros {
-			sepa: separator {
-				compatible = "zmk,behavior-macro";
-				#binding-cells = <0>;
-				bindings = <&macro-tap &kp COMMA &kp SPACE>;
-			};
+	macros {
+		sepa: separator {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&macro-tap &kp COMMA &kp SPACE>;
 		};
-		behaviors {
-			td00: tap_dance_00 {
-				compatible = "zmk,behavior-tap-dance";
-				#binding-cells = <0>;
-				tapping-term-ms = <200>;
-				bindings = <&kp LPAR>, <&kp LBKT>, <&kp LBRC>;
-			};
-			td01: tap_dance_01 {
-				compatible = "zmk,behavior-tap-dance";
-				#binding-cells = <0>;
-				tapping-term-ms = <200>;
-				bindings = <&kp RPAR>, <&kp RBKT>, <&kp RBRC>;
-			};
-			td02: tap_dance_02 {
-				compatible = "zmk,behavior-tap-dance";
-				#binding-cells = <0>;
-				tapping-term-ms = <200>;
-				bindings = <&kp FSLH>, <&kp BSLH>;
-			};
-			td03: tap_dance_03 {
-				compatible = "zmk,behavior-tap-dance";
-				#binding-cells = <0>;
-				tapping-term-ms = <200>;
-				bindings = <&kp BSPC>, <&kp DEL>;
-			};
-			td04: tap_dance_04 {
-				compatible = "zmk,behavior-tap-dance";
-				#binding-cells = <0>;
-				tapping-term-ms = <200>;
-				bindings = <&kp UNDER>, <&kp EQUAL>;
-			};
-			td05: tap_dance_05 {
-				compatible = "zmk,behavior-tap-dance";
-				#binding-cells = <0>;
-				tapping-term-ms = <200>;
-				bindings = <&kp AMPS>, <&kp PIPE>;
-			};
-			td06: tap_dance_06 {
-				compatible = "zmk,behavior-tap-dance";
-				#binding-cells = <0>;
-				tapping-term-ms = <200>;
-				bindings = <&kp STAR>, <&kp CARET>;
-			};
-			td07: tap_dance_07 {
-				compatible = "zmk,behavior-tap-dance";
-				#binding-cells = <0>;
-				tapping-term-ms = <200>;
-				bindings = <&kp DLLR>, <&kp PRCNT>;
-			};
-			td08: tap_dance_08 {
-				compatible = "zmk,behavior-tap-dance";
-				#binding-cells = <0>;
-				tapping-term-ms = <200>;
-				bindings = <&kp LT>, <&kp GT>;
-			};
-			td09: tap_dance_09 {
-				compatible = "zmk,behavior-tap-dance";
-				#binding-cells = <0>;
-				tapping-term-ms = <200>;
-				bindings = <&kp KP_MINUS>, <&kp KP_DIVIDE>;
-			};
-			td10: tap_dance_10 {
-				compatible = "zmk,behavior-tap-dance";
-				#binding-cells = <0>;
-				tapping-term-ms = <200>;
-				bindings = <&kp KP_PLUS>, <&kp KP_MULTIPLY>;
-			};
+	};
+	behaviors {
+		td00: tap_dance_00 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp LPAR>, <&kp LBKT>, <&kp LBRC>;
 		};
+		td01: tap_dance_01 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp RPAR>, <&kp RBKT>, <&kp RBRC>;
+		};
+		td02: tap_dance_02 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp FSLH>, <&kp BSLH>;
+		};
+		td03: tap_dance_03 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp BSPC>, <&kp DEL>;
+		};
+		td04: tap_dance_04 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp UNDER>, <&kp EQUAL>;
+		};
+		td05: tap_dance_05 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp AMPS>, <&kp PIPE>;
+		};
+		td06: tap_dance_06 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp STAR>, <&kp CARET>;
+		};
+		td07: tap_dance_07 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp DLLR>, <&kp PRCNT>;
+		};
+		td08: tap_dance_08 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp LT>, <&kp GT>;
+		};
+		td09: tap_dance_09 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp KP_MINUS>, <&kp KP_DIVIDE>;
+		};
+		td10: tap_dance_10 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp KP_PLUS>, <&kp KP_MULTIPLY>;
+		};
+	};
 
 	keymap {
 		compatible = "zmk,keymap";
