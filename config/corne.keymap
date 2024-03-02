@@ -13,13 +13,15 @@
 		compatible = "zmk,combos";
 		combo_prvdev {
 			timeout-ms = <50>;
-			key-positions = <29 5 21 3 20>;
+			key-positions = <1 2>;
 			bindings = <&bt BT_PRV>;
+			layers = <2>;
 		};
 		combo_nxtdev {
 			timeout-ms = <50>;
-			key-positions = <29 5 21 3 22>;
+			key-positions = <3 4>;
 			bindings = <&bt BT_NXT>;
+			layers = <2>;
 		};
 	};
 	macros {
@@ -114,7 +116,7 @@
 
 		raise_layer {
 			bindings = <
-		&kp ESC		&trans		&trans		&trans		&trans		&trans				&kp N1		&kp N2		&kp N3		&kp N4		&kp N5		&kp DEL
+		&kp ESC		&none		&none		&none		&none		&none				&kp N1		&kp N2		&kp N3		&kp N4		&kp N5		&kp DEL
 		&trans		&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT	&trans				&trans		&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT	&trans
 		&trans		&trans		&trans		&trans		&trans		&trans				&trans		&trans		&trans		&trans		&trans		&trans
 											&kp LGUI	&trans		&mt LSHFT SPACE		&trans		&trans		&trans
