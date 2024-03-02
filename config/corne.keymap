@@ -13,7 +13,7 @@
 		compatible = "zmk,combos";
 		combo_prvdev {
 			timeout-ms = <50>;
-			key-positions = <29 5 21 3 20>
+			key-positions = <29 5 21 3 20>;
 			bindings = <&bt BT_PRV>;
 		};
 		combo_nxtdev {
