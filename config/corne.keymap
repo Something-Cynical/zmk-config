@@ -9,6 +9,19 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+	combos{
+		compatible = "zmk,combos";
+		combo_prvdev {
+			timeout-ms = <50>;
+			key-positions = <29 5 21 3 20>
+			bindings = <&bt BT_PRV>;
+		};
+		combo_nxtdev {
+			timeout-ms = <50>;
+			key-positions = <29 5 21 3 22>
+			bindings = <&bt BT_NXT>;
+		};
+	};
 	macros {
 		sepa: separator {
 			compatible = "zmk,behavior-macro";
