@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 &mt {
-	flavor = "tap-preferred"
+	flavor = "tap-preferred";
 };
 
 / {
