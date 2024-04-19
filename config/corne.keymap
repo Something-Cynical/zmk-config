@@ -15,14 +15,14 @@
 / {
 	combos{
 		compatible = "zmk,combos";
-		combo_btfnlayer {
+		combo_btfn {
 			timeout-ms = <50>;
 			key-positions = <0 12>;
 			bindings = <&mo 3>;
 			layers = <2>;
-		
 		};
 	};
+
 	macros {
 		sepa: separator {
 			compatible = "zmk,behavior-macro"; 
@@ -38,84 +38,72 @@
 			tapping-term-ms = <200>;
 			bindings = <&kp LPAR>, <&kp LBKT>, <&kp LBRC>;
 		};
-
 		td01: tap_dance_01 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp RPAR>, <&kp RBKT>, <&kp RBRC>;
 		};
-
 		td02: tap_dance_02 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp FSLH>, <&kp BSLH>;
 		};
-		
 		td03: tap_dance_03 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp UNDER>, <&kp EQUAL>;
 		};
-
 		td04: tap_dance_04 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp AMPS>, <&kp PIPE>;
 		};
-
 		td05: tap_dance_05 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp STAR>, <&kp CARET>;
 		};
-
 		td06: tap_dance_06 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp DLLR>, <&kp PRCNT>;
 		};
-
 		td07: tap_dance_07 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp LT>, <&kp GT>;
 		};
-
 		td08: tap_dance_08 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp KP_MINUS>, <&kp KP_DIVIDE>;
 		};
-
 		td09: tap_dance_09 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp KP_PLUS>, <&kp KP_MULTIPLY>;
 		};
-
 		td10: tap_dance_10 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp HASH>, <&kp EXCL>;
 		};
-
 		td11: tap_dance_11 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&mt LSHFT SPACE>, <&mt LSHFT RET>;
 		};
-
 		td12: tap_dance_12 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
