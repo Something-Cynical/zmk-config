@@ -16,18 +16,6 @@
 / {
 	combos{
 		compatible = "zmk,combos";
-		combo_prvdev {
-			timeout-ms = <50>;
-			key-positions = <1 2>;
-			bindings = <&bt BT_PRV>;
-			layers = <2>;
-		};
-		combo_nxtdev {
-			timeout-ms = <50>;
-			key-positions = <3 4>;
-			bindings = <&bt BT_NXT>;
-			layers = <2>;
-		};
 		combo_btfnlayer {
 			timeout-ms = <50>;
 			key-positions = <0 12>;
